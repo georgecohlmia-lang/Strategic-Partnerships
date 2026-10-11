@@ -3,36 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Strategic Partnerships Playbook · FoundersPath</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<title>Strategic Partnerships Playbook · Two Weeks Out</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
-  :root {
-    --accent: #1F4E79;
-    --accent-light: #2E5F8E;
-    --accent-soft: #E8EEF5;
-    --accent-faint: #F4F7FB;
-    --emerald: #0F7A4F;
-    --emerald-bright: #3DBE7C;
-    --emerald-soft: #E8F1EC;
-    --ink: #1A2326;
-    --ink-soft: #374151;
-    --muted: #6B7280;
-    --muted-soft: #9CA3AF;
-    --border: #E5E7EB;
-    --border-soft: #F3F4F6;
-    --bg: #FAFAFA;
-    --warn: #B07D3A;
-    --warn-soft: #FBF1E3;
-    --warn-border: #E6C896;
-    --danger: #C46B6B;
-    --danger-soft: #FAEEEE;
+  :root{
+    --accent:#2747f5;
+    --accent-light:#2747f5;
+    --accent-soft:#e9ecf5;
+    --accent-faint:#fbfaf6;
+    --emerald:#0d6b4c;
+    --emerald-bright:#0d6b4c;
+    --emerald-soft:#e2f5ea;
+    --ink:#10131a;
+    --ink-soft:#10131a;
+    --muted:#59616e;
+    --muted-soft:#9ba3af;
+    --border:#e9ecf5;
+    --border-soft:#fbfaf6;
+    --bg:#fbfaf6;
+    --warn:#7d5300;
+    --warn-soft:#fff3cd;
+    --warn-border:#ffd23f;
+    --danger:#b3261e;
+    --danger-soft:#fde9e7;
   }
   * { box-sizing: border-box; }
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
     background: var(--bg);
     color: var(--ink);
     margin: 0;
@@ -56,12 +54,10 @@
     margin-bottom: 8px;
   }
   h1 {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 36px;
-    font-weight: 600;
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;
+    font-size: 36px;font-weight:800;
     color: var(--ink);
-    margin: 0 0 8px;
-  }
+    margin: 0 0 8px;letter-spacing:-.03em;font-style:normal;line-height:1.04;}
   .subtitle { font-size: 16px; color: var(--muted); font-style: italic; }
 
   /* === LIVE PANEL === */
@@ -95,7 +91,7 @@
     opacity: 0.85;
   }
   .live-headline {
-    font-family: 'Lora', serif;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
     font-size: 18px;
     font-weight: 600;
     margin-top: 2px;
@@ -106,7 +102,7 @@
   .section {
     background: white;
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius:0;
     margin-bottom: 24px;
     overflow: hidden;
   }
@@ -123,22 +119,18 @@
     color: white;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius:0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Lora', serif;
-    font-size: 20px;
-    font-weight: 600;
-    flex-shrink: 0;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;
+    font-size: 20px;font-weight:800;
+    flex-shrink: 0;letter-spacing:-.03em;font-style:normal;}
   .section-title {
-    font-family: 'Lora', serif;
-    font-size: 22px;
-    font-weight: 600;
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;
+    font-size: 22px;font-weight:800;
     color: var(--ink);
-    margin: 0;
-  }
+    margin: 0;letter-spacing:-.03em;font-style:normal;}
   .section-sub {
     font-size: 13px;
     color: var(--muted);
@@ -174,7 +166,7 @@
     width: 100%;
     padding: 10px 12px;
     border: 1px solid var(--border);
-    border-radius: 6px;
+    border-radius:0;
     font-family: inherit;
     font-size: 14px;
     color: var(--ink);
@@ -197,7 +189,7 @@
     font-size: 11px;
     font-weight: 500;
     padding: 4px 10px;
-    border-radius: 4px;
+    border-radius:0;
     cursor: pointer;
     transition: all 0.15s;
     white-space: nowrap;
@@ -222,7 +214,7 @@
   /* === INFO STRIP === */
   .info-strip {
     background: var(--accent-soft);
-    border-radius: 6px;
+    border-radius:0;
     padding: 12px 16px;
     font-size: 13px;
     color: var(--ink-soft);
@@ -241,7 +233,7 @@
   .move-switch-btn {
     border: 1.5px solid var(--border);
     background: white;
-    border-radius: 8px;
+    border-radius:0;
     padding: 16px 18px;
     cursor: pointer;
     text-align: left;
@@ -255,7 +247,7 @@
   }
   .move-switch-btn-name {
     display: block;
-    font-family: 'Lora', serif;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: var(--ink);
@@ -286,14 +278,14 @@
     font-size: 14px;
     background: var(--accent-faint);
     border: 1px dashed var(--border);
-    border-radius: 8px;
+    border-radius:0;
   }
   .move-prompt.hidden { display: none; }
 
   /* === CHECK CARD (partnership failure-mode tests) === */
   .check-card {
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius:0;
     padding: 20px 22px;
     margin-bottom: 16px;
     background: white;
@@ -308,7 +300,7 @@
     margin-bottom: 4px;
   }
   .check-card-title {
-    font-family: 'Lora', serif;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: var(--ink);
@@ -320,14 +312,14 @@
     background: var(--warn-soft);
     border-left: 3px solid var(--warn);
     padding: 8px 12px;
-    border-radius: 4px;
+    border-radius:0;
     margin-bottom: 14px;
   }
 
   /* === PRECONDITION GATE === */
   .precondition {
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius:0;
     padding: 20px 22px;
     margin-bottom: 16px;
     background: white;
@@ -347,17 +339,17 @@
     color: white;
     width: 32px;
     height: 32px;
-    border-radius: 50%;
+    border-radius:0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Lora', serif;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
     font-size: 16px;
     font-weight: 600;
     flex-shrink: 0;
   }
   .precondition-title {
-    font-family: 'Lora', serif;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: var(--ink);
@@ -381,7 +373,7 @@
     padding: 9px 14px;
     border: 1.5px solid var(--border);
     background: white;
-    border-radius: 6px;
+    border-radius:0;
     font-family: inherit;
     font-size: 13px;
     font-weight: 500;
@@ -399,7 +391,7 @@
   .verdict-banner {
     margin-top: 8px;
     padding: 20px 24px;
-    border-radius: 8px;
+    border-radius:0;
     display: flex;
     align-items: center;
     gap: 18px;
@@ -412,7 +404,7 @@
     flex-shrink: 0;
     width: 52px;
     height: 52px;
-    border-radius: 50%;
+    border-radius:0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -421,11 +413,9 @@
   .verdict-banner.wait .verdict-icon { background: var(--warn); color: white; }
   .verdict-banner.incomplete .verdict-icon { background: var(--muted-soft); color: white; }
   .verdict-title {
-    font-family: 'Lora', serif;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;
+    font-size: 20px;font-weight:800;
+    margin-bottom: 4px;letter-spacing:-.03em;font-style:normal;}
   .verdict-banner.go .verdict-title { color: var(--emerald); }
   .verdict-banner.wait .verdict-title { color: var(--warn); }
   .verdict-banner.incomplete .verdict-title { color: var(--muted); }
@@ -436,7 +426,7 @@
     background: var(--warn-soft);
     border: 1px solid var(--warn-border);
     border-left: 4px solid var(--warn);
-    border-radius: 6px;
+    border-radius:0;
     padding: 14px 18px;
     margin-bottom: 22px;
     font-size: 13px;
@@ -454,7 +444,7 @@
   }
   .integration-card {
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius:0;
     padding: 18px 20px;
     background: white;
   }
@@ -470,10 +460,10 @@
 
   /* === COMMIT CARD === */
   .commit-card {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+    background: var(--accent);
     color: white;
     padding: 28px;
-    border-radius: 8px;
+    border-radius:0;
     margin-top: 16px;
   }
   .commit-card label { color: rgba(255,255,255,0.85); }
@@ -488,7 +478,7 @@
     background: var(--ink);
     color: white;
     padding: 28px;
-    border-radius: 8px;
+    border-radius:0;
     margin-top: 16px;
   }
   .closer-eyebrow {
@@ -500,11 +490,9 @@
     margin-bottom: 8px;
   }
   .closer-title {
-    font-family: 'Lora', serif;
-    font-size: 21px;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;
+    font-size: 21px;font-weight:800;
+    margin-bottom: 8px;letter-spacing:-.03em;font-style:normal;}
   .closer-text {
     font-size: 14px;
     color: rgba(255,255,255,0.8);
@@ -521,7 +509,7 @@
     font-size: 11px;
     background: rgba(255,255,255,0.1);
     border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 4px;
+    border-radius:0;
     padding: 5px 9px;
     color: rgba(255,255,255,0.85);
   }
@@ -538,20 +526,19 @@
     padding: 28px;
     background: white;
     border: 2px solid var(--accent);
-    border-radius: 8px;
+    border-radius:0;
     text-align: center;
   }
   .download-bar h2 {
-    font-family: 'Lora', serif;
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;
     font-size: 22px;
     margin: 0 0 8px;
-    color: var(--ink);
-  }
+    color: var(--ink);font-weight:800;letter-spacing:-.03em;font-style:normal;}
   .download-bar p { color: var(--muted); margin: 0 0 20px; font-size: 14px; }
   .download-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
   .btn {
     padding: 12px 24px;
-    border-radius: 6px;
+    border-radius:0;
     font-family: inherit;
     font-size: 14px;
     font-weight: 500;
@@ -576,13 +563,12 @@
   .clear-all-wrap { margin-top: 16px; text-align: center; }
   .btn-clear {
     background: transparent;
-    border: none;
-    color: var(--muted-soft);
+    border: none;color:#59616e;
     font-family: inherit;
     font-size: 13px;
     font-weight: 500;
     padding: 8px 14px;
-    border-radius: 6px;
+    border-radius:0;
     cursor: pointer;
     transition: all 0.15s;
     text-decoration: underline;
@@ -598,7 +584,7 @@
     background: var(--ink);
     color: white;
     padding: 10px 16px;
-    border-radius: 24px;
+    border-radius:0;
     font-size: 13px;
     opacity: 0;
     transform: translateY(10px);
@@ -616,7 +602,7 @@
     width: 8.5in;
     background: white;
     padding: 0.7in 0.8in;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
     color: var(--ink);
   }
   .pdf-document .pdf-header {
@@ -633,22 +619,21 @@
     margin-bottom: 6px;
   }
   .pdf-document h1 {
-    font-family: 'Lora', serif;
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;
     font-size: 26px;
     margin: 0 0 4px;
-    color: var(--ink);
-  }
+    color: var(--ink);font-weight:800;letter-spacing:-.03em;font-style:normal;line-height:1.04;}
   .pdf-document .pdf-subtitle { font-size: 13px; color: var(--muted); font-style: italic; }
   .pdf-document .pdf-meta { font-size: 12px; color: var(--muted); margin-bottom: 18px; }
   .pdf-document .pdf-verdict {
     padding: 14px 18px;
-    border-radius: 6px;
+    border-radius:0;
     margin-bottom: 20px;
   }
   .pdf-document .pdf-verdict.go { background: var(--emerald-soft); border: 1px solid var(--emerald); }
   .pdf-document .pdf-verdict.wait { background: var(--warn-soft); border: 1px solid var(--warn-border); }
   .pdf-document .pdf-verdict-title {
-    font-family: 'Lora', serif;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 3px;
@@ -657,7 +642,7 @@
   .pdf-document .pdf-verdict.wait .pdf-verdict-title { color: var(--warn); }
   .pdf-document .pdf-verdict-text { font-size: 11px; color: var(--ink-soft); }
   .pdf-document .pdf-section-title {
-    font-family: 'Lora', serif;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
     font-size: 15px;
     color: var(--accent);
     font-weight: 600;
@@ -669,7 +654,7 @@
     background: var(--accent);
     color: white;
     padding: 14px 18px;
-    border-radius: 6px;
+    border-radius:0;
     margin: 8px 0;
   }
   .pdf-document .pdf-move-label {
@@ -680,7 +665,7 @@
     margin-bottom: 4px;
   }
   .pdf-document .pdf-move-name {
-    font-family: 'Lora', serif;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
     font-size: 18px;
     font-weight: 600;
   }
@@ -712,8 +697,7 @@
     padding: 14px;
     background: var(--bg);
     border-left: 3px solid var(--accent);
-    font-family: 'Lora', serif;
-    font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 13px;
     color: var(--ink-soft);
     text-align: center;
@@ -722,8 +706,7 @@
     margin-top: 26px;
     padding-top: 10px;
     border-top: 1px solid var(--border);
-    font-size: 10px;
-    color: var(--muted-soft);
+    font-size: 10px;color:#59616e;
     text-align: center;
   }
 
@@ -766,9 +749,26 @@
     .pdf-document .pdf-section-title { page-break-after: avoid; }
     .pdf-document .pdf-principle { page-break-inside: avoid; }
   }
+
+/* Two Weeks Out module band, October 2026 system */
+.two-band{display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:center;padding:12px 24px;background:#BFE34F;color:#10131a;border-bottom:2px solid #10131a;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.two-band .two-wm{font-family:'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;font-size:17px;letter-spacing:-.03em;line-height:1;color:#10131a}
+.two-band .two-mod{font-family:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;line-height:1.3;color:#10131a}
+body{-webkit-font-smoothing:antialiased}
+@media print{.two-band{display:none !important}}
+/* shared touches, October 2026 system */
+button,select,optgroup,option{font-family:inherit}
+input[type=checkbox],input[type=radio],input[type=range]{accent-color:#2747f5}
+h1 em,h1 i{font-style:normal !important;font-weight:inherit !important;color:inherit !important;background:linear-gradient(#ff5a1f,#ff5a1f) left calc(100% - .04em)/100% .09em no-repeat;padding-bottom:.02em;-webkit-box-decoration-break:clone;box-decoration-break:clone;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.live-panel{margin:0 0 36px}
+/* contrast on dark and tinted blocks */
+div.commit-card div.label-hint{color:#e6eaff}
+div.closer-card div.closer-eyebrow{color:#6fdca3}
+div.closer-card button.use-example-btn{color:#93abff}
 </style>
 </head>
 <body>
+<div class="two-band"><span class="two-wm">Two Weeks Out</span><span class="two-mod">10 / Grow Without Losing Control</span></div>
 
 <div class="live-panel" id="livePanel">
   <div class="live-panel-inner">
@@ -804,8 +804,8 @@
           <input type="text" id="businessName" placeholder="e.g. Acme Advisory">
         </div>
         <div class="field">
-          <label for="founderName">Your name</label>
-          <input type="text" id="founderName" placeholder="e.g. David Chen">
+          <label for="ownerName">Your name</label>
+          <input type="text" id="ownerName" placeholder="e.g. David Chen">
         </div>
       </div>
       <div class="field-row">
@@ -1005,7 +1005,7 @@
                   <button class="use-example-btn" data-example="integCulture" type="button">Use example</button>
                 </div>
               </div>
-              <textarea id="integCulture" placeholder="e.g. The acquired team may read integration as a takeover. Plan: regular founder presence on-site early on; no forced process change in the first few months."></textarea>
+              <textarea id="integCulture" placeholder="e.g. The acquired team may read integration as a takeover. Plan: regular owner presence on-site early on; no forced process change in the first few months."></textarea>
             </div>
           </div>
         </div>
@@ -1086,7 +1086,7 @@
         <div class="field-row">
           <div class="field">
             <label for="commitOwner">Who owns this move?</label>
-            <input type="text" id="commitOwner" placeholder="e.g. Founder, with the senior team on integration">
+            <input type="text" id="commitOwner" placeholder="e.g. Owner, with the senior team on integration">
           </div>
           <div class="field">
             <label for="commitStart">When does it start?</label>
@@ -1119,7 +1119,7 @@
         <div class="closer-eyebrow">The closing reflection</div>
         <div class="closer-title">Your one growth move</div>
         <div class="closer-text">
-          Across this module you've worked through every major path a bootstrapped business can grow by. Each path is real — but a focused founder runs one at a time.
+          Across this module you've worked through every major path a bootstrapped business can grow by. Each path is real — but a focused owner runs one at a time.
         </div>
         <div class="closer-arc">
           <span class="closer-arc-item">Growth frameworks</span>
@@ -1170,7 +1170,7 @@
 <script>
 'use strict';
 
-const STORAGE_KEY = 'foundersPath_strategicPartnerships_v1';
+const STORAGE_KEY = 'Two Weeks Out_strategicPartnerships_v1';
 
 // === ACQUISITION PRECONDITIONS ===
 const PRECONDITIONS = [
@@ -1186,9 +1186,9 @@ const PRECONDITIONS = [
     key: 'absorb',
     title: 'You can absorb it without breaking the core',
     test: 'Your existing business stays healthy while you integrate.',
-    question: 'Can you integrate this without the founder disappearing into it for a year, and without your current business quietly deteriorating while your attention is elsewhere?',
+    question: 'Can you integrate this without the owner disappearing into it for a year, and without your current business quietly deteriorating while your attention is elsewhere?',
     evidenceHint: 'What capacity and attention does integration realistically require?',
-    evidenceExample: 'Integration needs roughly one founder-week a month for two quarters, which the senior team can cover for. The existing business runs on documented systems and would not deteriorate. If integration required full founder attention, the answer here would be no.',
+    evidenceExample: 'Integration needs roughly one owner-week a month for two quarters, which the senior team can cover for. The existing business runs on documented systems and would not deteriorate. If integration required full owner attention, the answer here would be no.',
   },
 ];
 
@@ -1198,11 +1198,11 @@ const EXAMPLES = {
   partnerInfra: 'A referral partner could realistically send 15-20 qualified leads a month. Our delivery currently has slack for about 8 new engagements a quarter. We would need a senior hire in place and onboarded before the partnership goes live — otherwise it exposes our delivery limits at scale and damages the reputation it was meant to build.',
   partnerDiff: 'In a co-delivery model the client must still see our senior-led judgement as the reason they are in the room. We keep the client relationship and the advisory voice; the partner provides delivery capacity behind the scenes. If the client cannot tell whose work they are buying, the partnership has blurred us and we walk away.',
   econEvidence: 'On the target\'s standalone numbers — roughly 30 clients at current margins, with no assumed synergies — the deal pays back within three years on the cash portion alone. The earnout and rolled equity align the upside; they do not finance the base case.',
-  absorbEvidence: 'Integration realistically needs about one founder-week per month for two quarters. The senior team can cover the founder\'s normal load for that period, and the existing business runs on documented systems that will not quietly deteriorate. If integration demanded full founder attention for a year, this would be a no.',
+  absorbEvidence: 'Integration realistically needs about one owner-week per month for two quarters. The senior team can cover the owner\'s normal load for that period, and the existing business runs on documented systems that will not quietly deteriorate. If integration demanded full owner attention for a year, this would be a no.',
   integKeep: 'The acquired firm\'s senior client relationships, and the local team\'s autonomy over how they run individual engagements. Those relationships and that judgement are most of what we are paying for.',
   integChange: 'Shared financial and reporting systems, one common delivery standard, and a single unified brand — phased in over twelve months, not imposed on day one.',
   integRetention: 'Rolled equity and an earnout for the four senior associates, tied to a two-year horizon so their incentives run with ours. Each has a clearly defined, senior role from day one — no ambiguity about where they stand.',
-  integCulture: 'The biggest risk is the acquired team reading integration as a takeover and the best people leaving. The plan: the founder spends one week a month on-site for the first two quarters, no forced process change in the first 90 days, and the local lead keeps real authority.',
+  integCulture: 'The biggest risk is the acquired team reading integration as a takeover and the best people leaving. The plan: the owner spends one week a month on-site for the first two quarters, no forced process change in the first 90 days, and the local lead keeps real authority.',
   opsGovern: 'A single named owner on each side — not a committee. A standing monthly review of volume, delivery quality, and any friction, with a clear escalation path when something slips. The relationship is actively run, not left to drift.',
   opsTerms: 'The economics are written down, along with who owns the client relationship and what each side contributes. A defined wind-down clause lets either side exit cleanly — clients are reassigned in an orderly way and neither brand is damaged on the way out.',
   opsCapacity: 'A volume cap written into the agreement so the partner cannot flood us. A hiring trigger tied to their pipeline, so capacity is added before it is needed. And the right to pace intake — delivery quality never falls behind the inflow.',
@@ -1215,7 +1215,7 @@ const EXAMPLES = {
 // === STATE ===
 function makePrecond() { return { answer: '', evidence: '' }; }
 let state = {
-  business: { name: '', founder: '', revenue: '', coreStrength: '' },
+  business: { name: '', owner: '', revenue: '', coreStrength: '' },
   move: '',
   moveDescribe: '',
   partnership: { infra: '', diff: '' },
@@ -1295,7 +1295,7 @@ function render() {
 
 function renderBusiness() {
   document.getElementById('businessName').value = state.business.name || '';
-  document.getElementById('founderName').value = state.business.founder || '';
+  document.getElementById('ownerName').value = state.business.owner || '';
   document.getElementById('currentRevenue').value = state.business.revenue || '';
   document.getElementById('coreStrength').value = state.business.coreStrength || '';
 }
@@ -1517,7 +1517,7 @@ function updateLivePanel() {
 
 // === FIELD WIRING ===
 function wireBusinessFields() {
-  const map = { businessName: 'name', founderName: 'founder', currentRevenue: 'revenue', coreStrength: 'coreStrength' };
+  const map = { businessName: 'name', ownerName: 'owner', currentRevenue: 'revenue', coreStrength: 'coreStrength' };
   Object.entries(map).forEach(([id, key]) => {
     document.getElementById(id).addEventListener('input', e => {
       state.business[key] = e.target.value;
@@ -1666,11 +1666,11 @@ function buildPdfDocument() {
 
   let html = `
     <div class="pdf-header">
-      <div class="pdf-eyebrow">FoundersPath · Strategic Partnerships Playbook</div>
+      <div class="pdf-eyebrow">Two Weeks Out · Strategic Partnerships Playbook</div>
       <h1>${escapeHtml(b.name || 'Your Strategic Partnership Playbook')}</h1>
       <div class="pdf-subtitle">${escapeHtml(businessLine || 'Strategic partnership playbook')}</div>
     </div>
-    <div class="pdf-meta">${b.founder ? `Prepared by ${escapeHtml(b.founder)} · ` : ''}${today}</div>
+    <div class="pdf-meta">${b.owner ? `Prepared by ${escapeHtml(b.owner)} · ` : ''}${today}</div>
   `;
 
   // The move
@@ -1681,7 +1681,7 @@ function buildPdfDocument() {
       <div class="pdf-move-name">${escapeHtml(moveName)}</div>
     </div>`;
   if (state.moveDescribe) {
-    html += `<div style="font-size:11px; color:#374151; margin-top:8px;">${escapeHtml(state.moveDescribe)}</div>`;
+    html += `<div style="font-size:11px; color:#10131a; margin-top:8px;">${escapeHtml(state.moveDescribe)}</div>`;
   }
 
   // Partnership evaluation
@@ -1690,8 +1690,8 @@ function buildPdfDocument() {
       <table>
         <thead><tr><th style="width:32%;">Failure mode</th><th style="width:68%;">Your assessment</th></tr></thead>
         <tbody>
-          <tr><td><strong>Infrastructure</strong><br><span style="color:#6B7280;">Can you carry the volume?</span></td><td>${escapeHtml(state.partnership.infra || '—')}</td></tr>
-          <tr><td><strong>Differentiation</strong><br><span style="color:#6B7280;">Do you stay distinct?</span></td><td>${escapeHtml(state.partnership.diff || '—')}</td></tr>
+          <tr><td><strong>Infrastructure</strong><br><span style="color:#59616e;">Can you carry the volume?</span></td><td>${escapeHtml(state.partnership.infra || '—')}</td></tr>
+          <tr><td><strong>Differentiation</strong><br><span style="color:#59616e;">Do you stay distinct?</span></td><td>${escapeHtml(state.partnership.diff || '—')}</td></tr>
         </tbody>
       </table>`;
   }
@@ -1777,11 +1777,11 @@ function buildPdfDocument() {
   // Module closer
   if (state.closerReflection) {
     html += `<div class="pdf-section-title">The One Growth Move</div>
-      <div style="font-size:11px; color:#374151;">${escapeHtml(state.closerReflection)}</div>`;
+      <div style="font-size:11px; color:#10131a;">${escapeHtml(state.closerReflection)}</div>`;
   }
 
   html += `<div class="pdf-principle">A partnership multiplies what you have. An acquisition absorbs what someone else built. Either way, the integration is the work.</div>`;
-  html += `<div class="pdf-footer">FoundersPath · From Corporate Operator to Confident Founder</div>`;
+  html += `<div class="pdf-footer">Two Weeks Out · From Corporate Operator to Confident Owner</div>`;
 
   el.innerHTML = html;
 }
@@ -1798,7 +1798,7 @@ document.getElementById('downloadXlsxBtn').addEventListener('click', () => {
     const evalRows = [
       ['Field', 'Value'],
       ['Business', b.name || ''],
-      ['Founder', b.founder || ''],
+      ['Owner', b.owner || ''],
       ['Current revenue', b.revenue || ''],
       ['Core strength to protect', b.coreStrength || ''],
       [''],
